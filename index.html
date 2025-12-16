@@ -26,16 +26,17 @@
                         <li class="nav__item"><a href="#" class="nav__link">探索</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">冒險</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">發現</a></li>
+                        <li class="nav__item"><a href="#rsvp" class="nav__link">回覆</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
 
-        <main>
-            <!-- ===== HOME =====-->
-            <div class="home">
-                <div class="parallax home__parallax home__parallax-img1" data-rellax-speed="-9"></div>
-                <div class="parallax home__parallax home__parallax-img2" data-rellax-speed="-7"></div>
+    <main>
+        <!-- ===== HOME =====-->
+        <div class="home">
+            <div class="parallax home__parallax home__parallax-img1" data-rellax-speed="-9"></div>
+            <div class="parallax home__parallax home__parallax-img2" data-rellax-speed="-7"></div>
                 <div class="parallax home__parallax home__parallax-img3" data-rellax-speed="-6"></div>
                 <div class="parallax home__parallax home__parallax-img4" data-rellax-speed="-3"></div>
 
@@ -47,18 +48,51 @@
                 </div>
             </div>
 
-            <!-- ===== SECTION =====-->
-            <section class="l-section" id="section">
-                <div class="section">
-                    <div class="section__data">
-                        <h2 class="section__title">攀登高山</h2>
-                        <p class="section__text">踏上山巔，感受雲霧繚繞與冰川共舞的壯闊景致。從蜿蜒小徑到峭壁攀升，每一步都讓人更貼近大地的脈動，發現隱藏於山林間的靜謐與驚喜。</p>
-                    </div>
-        
-                    <img src="assets/img/imgm.jpg" alt="雪山景色" class="section__img">
+        <!-- ===== SECTION =====-->
+        <section class="l-section" id="section">
+            <div class="section">
+                <div class="section__data">
+                    <h2 class="section__title">攀登高山</h2>
+                    <p class="section__text">踏上山巔，感受雲霧繚繞與冰川共舞的壯闊景致。從蜿蜒小徑到峭壁攀升，每一步都讓人更貼近大地的脈動，發現隱藏於山林間的靜謐與驚喜。</p>
                 </div>
-            </section>
-        </main>
+
+                <img src="assets/img/imgm.jpg" alt="雪山景色" class="section__img">
+            </div>
+        </section>
+
+        <!-- ===== RSVP FORM =====-->
+        <section class="l-section" id="rsvp">
+            <div class="section section--form">
+                <div class="section__data">
+                    <h2 class="section__title">邀請回覆</h2>
+                    <p class="section__text">留下您的聯絡資訊並告訴我們是否能一同參與這趟旅程！</p>
+                </div>
+
+                <form class="rsvp-form">
+                    <label class="rsvp-form__field">
+                        <span class="rsvp-form__label">姓名</span>
+                        <input type="text" name="name" placeholder="請輸入姓名" required>
+                    </label>
+
+                    <label class="rsvp-form__field">
+                        <span class="rsvp-form__label">電話</span>
+                        <input type="tel" name="phone" placeholder="請輸入電話" required>
+                    </label>
+
+                    <label class="rsvp-form__field">
+                        <span class="rsvp-form__label">是否參加</span>
+                        <select name="attendance" required>
+                            <option value="">請選擇</option>
+                            <option value="yes">會參加</option>
+                            <option value="no">不克參加</option>
+                        </select>
+                    </label>
+
+                    <button type="submit" class="button">送出回覆</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
         <!-- RELLAX JS -->
         <script src="assets/js/rellax.min.js"></script>

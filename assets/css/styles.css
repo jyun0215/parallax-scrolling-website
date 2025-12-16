@@ -244,6 +244,84 @@ img {
           align-items: center;
 }
 
+.section--form {
+  gap: 2rem;
+}
+
+.rsvp-form {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+
+.rsvp-form__field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+.rsvp-form__label {
+  font-size: var(--normal-font-size);
+}
+
+.rsvp-form input,
+.rsvp-form select {
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--white-color);
+}
+
+.rsvp-form input::-webkit-input-placeholder,
+.rsvp-form select::-webkit-input-placeholder {
+  color: rgba(242, 242, 242, 0.7);
+}
+
+.rsvp-form input::-moz-placeholder,
+.rsvp-form select::-moz-placeholder {
+  color: rgba(242, 242, 242, 0.7);
+}
+
+.rsvp-form input:-ms-input-placeholder,
+.rsvp-form select:-ms-input-placeholder {
+  color: rgba(242, 242, 242, 0.7);
+}
+
+.rsvp-form input::-ms-input-placeholder,
+.rsvp-form select::-ms-input-placeholder {
+  color: rgba(242, 242, 242, 0.7);
+}
+
+.rsvp-form input::placeholder,
+.rsvp-form select::placeholder {
+  color: rgba(242, 242, 242, 0.7);
+}
+
+.button {
+  padding: 0.85rem 1.5rem;
+  background-color: var(--first-color);
+  border: none;
+  color: var(--white-color);
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+}
+
+.button:hover {
+  background-color: #027c8b;
+}
+
 .section__data {
   margin-bottom: 3rem;
 }
