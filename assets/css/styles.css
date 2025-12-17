@@ -4,9 +4,10 @@
 /*===== VARIABLES CSS =====*/
 /*=== Colores ===*/
 :root {
-  --first-color: #0396A6;
-  --dark-color: #000;
-  --white-color: #F2F2F2;
+  --first-color: #d4a5b2;
+  --first-color-alt: #c18695;
+  --dark-color: #0a0a0f;
+  --white-color: #F7F5F2;
 }
 
 /*=== Fuente y tipografia ===*/
@@ -244,6 +245,99 @@ img {
           align-items: center;
 }
 
+.section--form {
+  gap: 2rem;
+}
+
+.section--details {
+  gap: 2.5rem;
+}
+
+.rsvp-form {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+
+.rsvp-form__field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+.rsvp-form__label {
+  font-size: var(--normal-font-size);
+}
+
+.rsvp-form input,
+.rsvp-form select,
+.rsvp-form textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--white-color);
+}
+
+.rsvp-form input::-webkit-input-placeholder,
+.rsvp-form select::-webkit-input-placeholder,
+.rsvp-form textarea::-webkit-input-placeholder {
+  color: rgba(242, 242, 242, 0.7);
+}
+
+.rsvp-form input::-moz-placeholder,
+.rsvp-form select::-moz-placeholder,
+.rsvp-form textarea::-moz-placeholder {
+  color: rgba(242, 242, 242, 0.7);
+}
+
+.rsvp-form input:-ms-input-placeholder,
+.rsvp-form select:-ms-input-placeholder,
+.rsvp-form textarea:-ms-input-placeholder {
+  color: rgba(242, 242, 242, 0.7);
+}
+
+.rsvp-form input::-ms-input-placeholder,
+.rsvp-form select::-ms-input-placeholder,
+.rsvp-form textarea::-ms-input-placeholder {
+  color: rgba(242, 242, 242, 0.7);
+}
+
+.rsvp-form input::placeholder,
+.rsvp-form select::placeholder,
+.rsvp-form textarea::placeholder {
+  color: rgba(242, 242, 242, 0.7);
+}
+
+.rsvp-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.button {
+  padding: 0.85rem 1.5rem;
+  background-color: var(--first-color);
+  border: none;
+  color: var(--white-color);
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+
 .section__data {
   margin-bottom: 3rem;
 }
@@ -254,9 +348,41 @@ img {
   margin-bottom: 1rem;
 }
 
+.section__text--secondary {
+  color: rgba(247, 245, 242, 0.8);
+  margin-top: 0.75rem;
+}
+
 .section__img {
   width: 285px;
   border-radius: .5rem;
+}
+
+.details-grid {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+}
+
+.detail-card {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.detail-card__title {
+  color: var(--first-color);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.03em;
+}
+
+.detail-card__text {
+  color: var(--white-color);
+  line-height: 1.6;
 }
 
 /*===== MEDIA QUERIES =====*/
@@ -295,6 +421,10 @@ img {
   }
   .section__img {
     width: 470px;
+  }
+
+  .details-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
