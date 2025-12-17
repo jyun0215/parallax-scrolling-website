@@ -156,22 +156,22 @@ img {
 }
 
 .home__parallax-img1 {
-  background-image: url("/assets/img/imgm1.png");
+  background-image: url("assets/img/imgm1.png");
   z-index: var(--z-normal);
 }
 
 .home__parallax-img2 {
-  background-image: url("/assets/img/imgm2.png");
+  background-image: url("assets/img/imgm2.png");
   z-index: var(--z-tooltip);
 }
 
 .home__parallax-img3 {
-  background-image: url("/assets/img/imgm3.png");
+  background-image: url("assets/img/imgm3.png");
   z-index: var(--z-fixed);
 }
 
 .home__parallax-img4 {
-  background-image: url("/assets/img/imgm4.png");
+  background-image: url("assets/img/imgm4.png");
   z-index: var(--z-fixed);
 }
 
@@ -197,6 +197,15 @@ img {
   top: 44%;
   font-size: var(--h2-font-size);
   font-weight: bold;
+  z-index: var(--z-tooltip);
+}
+
+.home__tagline {
+  top: 53%;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.88;
   z-index: var(--z-tooltip);
 }
 
